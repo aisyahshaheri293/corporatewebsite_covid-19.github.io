@@ -1,0 +1,710 @@
+<!DOCTYPE html> 
+<head>
+<Title>HOME</title>
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<center><image src="image/header.png" width="60%"></center>
+<body background="image/image28.jpg">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<center><div class="mySlides fade">
+   <img src="image/image1.png" style="width:85%"></center>
+</div></center>
+
+<center><div class="mySlides fade">
+   <img src="image/image24.jpg" style="width:63%"></center>
+</div></center>
+
+<center><div class="mySlides fade">
+  <img src="image/image25.jpg" style="width:53%">
+</div>
+
+<center><div class="mySlides fade">
+  <img src="image/image26.jpg" style="width:53%"></center>
+</div></center>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+<span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+<center><a href="fact.html"><img src= "image/fact.png"></a><a href="faq.html">      <img src= "image/faq.png"></a></center>
+<br>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #FFF8C6;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="index.html">HOME</a>
+  <a href="cases.html">CASES</a>
+  <a href="vaccine.html">VACCINE</a>
+   <a href="sop.html">SOP</a>
+<a href="prevention.html">PREVENTION</a>
+    <a href="video.html">VIDEO</a>
+  <a href="hotline.html" class="right">HOTLINE</a>
+</div>
+
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+</head>
+<body>
+
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: left;    
+}
+</style>
+</head>
+<body>
+<style>
+#more {display: none;}
+</style>
+</head>
+<body>
+
+<style>
+table, th, td {
+  border: 4px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: px;
+  text-align: left;    
+}
+</style>
+<center><h2>Health Information</h2></center>
+<table style="width:100%">
+  <tr>
+  <tr align="center"  bgcolor="#FFFFCC">
+    <th rowspan="2">Symptoms:</th>
+<td><center>  Most common symptoms:
+<pre>&#8226; fever
+&#8226; dry cough
+&#8226; tiredness</pre>
+</td>
+  </tr>
+ <tr align="center"  bgcolor="#FFFFCC">
+    <td><center> Less common symptoms:
+<pre>&#8226; aches and pains
+&#8226; sore throat
+&#8226; diarrhea
+&#8226; conjunctivitis
+&#8226; headache
+&#8226; loss of taste or smell
+&#8226; a rash on skin, or discolouration of fingers or toes</pre></td>
+  </tr>
+  <tr>
+   <tr align="center"  bgcolor="#FFDFDD">
+    <th rowspan="2">Prevention:</th>
+    <td><center> To prevent the spread of COVID-19:
+<pre>&#8226; Clean your hands often. Use soap and water, or an alcohol-based hand rub.
+&#8226; Maintain a safe distance from anyone who is coughing or sneezing.
+&#8226; Wear a mask when physical distancing is not possible.
+&#8226; Don’t touch your eyes, nose or mouth.
+&#8226; Cover your nose and mouth with your bent elbow or a tissue when you cough or sneeze.
+&#8226; Stay home if you feel unwell.
+&#8226; If you have a fever, cough and difficulty breathing, seek medical attention.</pre></td>
+  </tr>
+  <tr align="center"  bgcolor="#FFDFDD">
+    <td><center> Masks
+<pre>&#8226; Masks can help prevent the spread of the virus from the person wearing the mask to others. 
+&#8226; Masks alone do not protect against COVID-19, and should be combined with physical distancing and hand hygiene. 
+&#8226; Follow the advice provided by your local health authority.</pre></td>
+  </tr>
+  
+  <tr
+   <tr align="center"  bgcolor="#E3E4FA">
+    <th rowspan="2">Treatments</th>
+    <td><center> Medical treatments
+Scientists around the world are working to find and develop treatments for COVID-19.
+<pre>&#8226; Optimal supportive care includes oxygen for severely ill patients and those who are at risk for severe disease and more advanced respiratory support such as 
+&#8226; ventilation for patients who are critically ill.
+&#8226; Dexamethasone is a corticosteroid that can help reduce the length of time on a ventilator and save lives of patients with severe and critical illness.</pre>
+WHO does not recommend self-medication with any medicines, including antibiotics, as a prevention or cure for COVID-19.</td>
+  </tr>
+   <tr align="center"  bgcolor="#E3E4FA">
+    <td><center> Self care
+<pre>&#8226; After exposure to someone who has COVID-19, do the following:
+&#8226; Call your health care provider or COVID-19 hotline to find out where and when to get a test.
+&#8226; Cooperate with contact-tracing procedures to stop the spread of the virus.
+&#8226; If testing is not available, stay home and away from others for 14 days.
+&#8226; While you are in quarantine, do not go to work, to school or to public places. Ask someone to bring you supplies.
+&#8226; Keep at least a 1-metre distance from others, even from your family members.
+&#8226; Wear a medical mask to protect others, including if/when you need to seek medical care.
+&#8226; Clean your hands frequently.
+&#8226; Stay in a separate room from other family members, and if not possible, wear a medical mask.
+&#8226; Keep the room well-ventilated.
+&#8226; If you share a room, place beds at least 1 metre apart.
+&#8226; Monitor yourself for any symptoms for 14 days.
+&#8226; Call your health care provider immediately if you have any of these danger signs: difficulty breathing, loss of speech or mobility, confusion or chest pain.
+&#8226; Stay positive by keeping in touch with loved ones by phone or online, and by exercising at home.</pre></td>
+  </tr>
+</table>
+<div class="row">
+  <div class="side">
+<center><h3>News</h3></center>
+<center><h4>Malaysia reports record 15,902 new Covid-19 cases</h4></center>
+<center><p><b><a href="https://www.straitstimes.com/asia/se-asia/malaysia-reports-record-15902-new-coronavirus-cases" target="_blank">This is a link</a></b></p></center>
+
+<center><h4>Hospitals to start using Baricitinib for Covid-19 treatment</h4></center>
+<center><p><b><a href="https://www.nst.com.my/news/nation/2021/07/711081/hospitals-start-using-baricitinib-covid-19-treatment" target="_blank">This is a link</a></b></p></center>
+
+<center><h4>Covid-19: 98% of new cases in Putrajaya, KL asymptomatic or have mild symptoms</h4></center>
+<center><p><b><a href="https://www.thestar.com.my/news/nation/2021/07/18/covid-19-98-of-new-cases-in-putrajaya-kl-asymptomatic-or-have-mild-symptoms" target="_blank">This is a link</a></b></p></center>
+
+<center><h4>Malaysia's administered Covid-19 vaccine doses fall to 406,763 on July 16 from record high</h4>
+<center><p><b><a href="https://www.theedgemarkets.com/article/malaysias-administered-covid19-vaccine-doses-fall-406763-july-16" target="_blank">This is a link</a></b></p>
+
+<h4>Malaysia's administered Covid-19 vaccine doses fall to 406,763 on July 16 from record high</h4>
+<center><p><b><a href="https://www.theedgemarkets.com/article/malaysias-administered-covid19-vaccine-doses-fall-406763-july-16" target="_blank">This is a link</a></b></p></center>
+
+<h4>More than 13,000 new COVID-19 cases in Malaysia in 3rd straight day of record numbers</h4>
+<center><p><b><a href="https://www.channelnewsasia.com/news/asia/covid-19-malaysia-record-13215-lockdown-mco-klang-valley-testing-15225440" target="_blank">This is a link</a></b></p></center>
+
+<h4>Covid-19 (July 15): Record 13,215 cases, new highs in S'gor, NS, Kedah and Penang</h4>
+<center><p><b><a href="https://www.malaysiakini.com/news/583192" target="_blank">This is a link</a></b></p>
+
+<h4>Malaysian family infected with Covid-19 Delta variant despite staying at home since April</h4>
+<center><p><b><a href="https://www.straitstimes.com/asia/se-asia/malaysian-family-infected-with-covid-19-delta-variant-despite-staying-at-home-since" target="_blank">This is a link</a></b></p></center>
+
+<h4>Covid-19: Malaysia reports new record of 11,079 cases on July 13, about half from Selangor</h4>
+<center><p><b><a href="https://www.theedgemarkets.com/article/covid19-malaysia-reports-new-record-high-11079-cases-july-13" target="_blank">This is a link</a></b></p></center>
+
+<h4>204 staff members at IDCC PPV test positive for Covid-19
+</h4>
+<center><p><b><a href="https://www.malaysiakini.com/news/582848" target="_blank">This is a link</a></b></p></center>
+
+<h4>Singapore Covid-19 cases at two-week high just as dine-in curbs ease</h4>
+<center><p><b><a href="https://www.theedgemarkets.com/article/singapore-covid19-cases-twoweek-high-just-dinein-curbs-ease" target="_blank">This is a link</a></b></p></center>
+
+<h4>Covid-19 (July 12): 8,574 new cases, active cases break 90,000 for the first time</h4>
+<center><p><b><a href="https://www.malaysiakini.com/news/582739" target="_blank">This is a link</a></b></p></center>
+
+<h4>Woman, 90, infected with Alpha and Beta Covid variants at the same time</h4>
+<center><p><b><a href="https://www.theguardian.com/world/2021/jul/11/woman-90-infected-with-alpha-and-beta-covid-variants-at-the-same-time" target="_blank">This is a link</a></b></p>
+
+<h4>Sungai Buloh Hospital seeing more pregnant women with Covid-19</h4>
+<center><p><b><a href="https://www.malaysiakini.com/news/582630" target="_blank">This is a link</a></b></p></center>
+
+<h4>Covid to get worse before it gets better, doctors warn</h4>
+<center><p><b><a href="https://www.bbc.com/news/uk-57786002" target="_blank">This is a link</a></b></p></center>
+
+<h4>Covid-19 (July 10): Another new record of 9,353 cases, drastic spike in Malacca</h4>
+<center><p><b><a href="https://www.malaysiakini.com/news/582515" target="_blank">This is a link</a></b></p></center>
+
+<h4>Coronavirus latest: Malaysia reports record 9,180 new cases</h4>
+<p><b><a href="https://asia.nikkei.com/Spotlight/Coronavirus/Coronavirus-Free-to-read/Coronavirus-latest-Malaysia-reports-record-9-180-new-cases" target="_blank">This is a link</a></b></p>
+
+<h4>Record 9,180 new COVID-19 cases, ICU patients in Malaysia amid third nationwide lockdown</h4>
+<p><b><a href="https://www.channelnewsasia.com/news/asia/covid-19-malaysia-record-9180-cases-icu-mco-lockdown-deaths-15186996" target="_blank">This is a link</a></b></p>
+  </div>
+  <div class="main">
+<style>
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+<center><h2>Overview</h2></center>
+<p>Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.<span id="dots">...</span><span id="more">Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment.  Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness.The best way to prevent and slow down transmission is to be well informed about the COVID-19 virus, the disease it causes and how it spreads. 
+
+Protect yourself and others from infection by washing your hands or using an alcohol based rub frequently and not touching your face. The COVID-19 virus spreads primarily through droplets of saliva or discharge from the nose when an infected person coughs or sneezes, so it’s important that you also practice respiratory etiquette (for example, by coughing into a flexed elbow).</span></p>
+<button onclick="myFunction()" id="myBtn">Read more</button>
+
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+<br>
+<center><h2>Is Covid the same in everyone?</h2></center>
+
+<center>No - it can affect multiple organs and has several less common symptoms.
+
+Scientists using data on the health of four million people say Covid has six sub-types.
+
+Symptoms include:
+
+<pre>
+&#8226; Flu-like with no fever: Headache, loss of smell, muscle pains, cough, sore throat, chest pain, no fever
+&#8226; Flu-like with fever: Headache, loss of smell, cough, sore throat, hoarseness, fever, loss of appetite
+&#8226; Gastrointestinal: Headache, loss of smell, loss of appetite, diarrhoea, sore throat, chest pain, no cough
+&#8226; Fatigue (severe level one): Headache, loss of smell, cough, fever, hoarseness, chest pain, fatigue
+&#8226; Confusion (severe level two): Headache, loss of smell, loss of appetite, cough, fever, 
+hoarseness, sore throat, chest pain, fatigue, confusion, muscle pain
+&#8226; Abdominal and respiratory (severe level three): Headache, loss of smell, loss of appetite, cough, fever, 
+hoarseness, sore throat, chest pain, fatigue, confusion, muscle pain, shortness of breath, diarrhoea, abdominal pain</pre>
+Researchers think that vomiting, diarrhoea and abdominal 
+cramps could be a sign of coronavirus in children.</center>
+<br>
+<center><image src="image/happen.png" width="50%"></center>
+<br>
+<center><h2>MySejahtera App</h2></center>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/mysejahtera.png">
+      <img src="image/mysejahtera.png" alt="MySejahtera" width="600" height="400">
+    </a>
+    <div class="desc">MySejahtera is an application developed by the Government of Malaysia to assist in monitoring COVID-19 outbreak in the country by empowering users to assess their health risk against COVID-19. This application also provides the Ministry of Health (MOH) with the necessary information to plan for early and effective countermeasures.</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/develop.png">
+      <img src="image/develop.png" alt="MySejahtera application" width="600" height="400">
+    </a>
+    <div class="desc">MySejahtera application is developed to:
+<pre>
+&#8226; Assist the Government in 
+managing and mitigating the 
+COVID-19 outbreak
+&#8226; Help users in monitoring 
+their health throughout the 
+COVID-19 outbreak
+&#8226; Assist users in getting 
+treatment if they are 
+infected with COVID-19
+&#8226; Locate nearest hospitals 
+and clinics for COVID-19 
+screening and treatment</pre></div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/checkin.png">
+      <img src="image/checkin.png" alt="MySejahtera Check-In" width="600" height="400">
+    </a>
+    <div class="desc">MySejahtera Check-In
+    MySejahtera Check-In is an extension of MySejahtera where it empowers small businesses, restaurants, shops, agencies, construction sites, companies, schools, hotels and all types of premises to follow standard operating procedures(SOPs) developed by the government in view of COVID-19 outbreak in Malaysia. Registration for MySejahtera Check-In is for businesses, premises, public transport and etc. to obtain and display the QR Code. MySejahtera users can use the MySejahtera QR Code Scanner within the app to scan the QR Code displayed.</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="image/qr.png">
+      <img src="image/qr.png" alt="QR Code" width="600" height="400">
+    </a>
+    <div class="desc">MySejahtera Application QR Code Scanner
+MySejahtera Check-In uses information from MySejahtera mobile application where the user is classified based on risk towards COVID-19, location and vulnerable dependents at home. This is especially useful for employers who can plan their workforce to work from home
+<pre>
+&#8226; Scan QR Code using 
+MySejahtera Application 
+QR Code Scanner
+&#8226; Clear to enter 
+the premises.</pre></div>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</div>
+<style>
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: white;
+  color: black;
+}
+</style>
+</head>
+<body>
+<style>
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: white;
+  color: black;
+}
+</style>
+</head>
+<body>
+
+<footer>
+  <style>
+.collapsible {
+  background-color: #FBBBB9;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color:#FFDFDD;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #E38AAE;
+}
+</style>
+<center><h2>Facts About Covid-19</h2></center>
+<center><p>Sources: World Health Organization; GAVI , the Vaccine Alliance</p></center>
+<button type="button" class="collapsible">COVID-19 vaccines were developed quickly while maintaining the highest safety standard possible</button>
+<div class="content">
+  <p>The need for a COVID-19 vaccine was urgent, so governments and companies spent much more money to develop it. Research and development took place at the same time around the world while still following strict safety and clinical standards. This allowed for faster vaccine development, but doesn't make the studies any less rigorous or the vaccine any less safe.</p>
+</div></p>
+<button type="button" class="collapsible">Vaccines are thoroughly tested for safety before they’re made available to the public</button>
+<div class="content">
+  <p>Vaccines go through extensive trials before they can be introduced in a country. Expert doctors and scientists follow strict international standards while deciding to make a vaccine available to the public. Like all medicines, vaccines may cause side effects that are usually minor and temporary. More serious side effects are extremely rare. A person is far more likely to be seriously harmed by a disease than by its vaccine.</p>
+</div></p>
+<button type="button" class="collapsible">COVID-19 vaccines can't give you COVID-19</button>
+<div class="content">
+  <p>You can't get COVID-19 from any of the vaccines. None of the vaccines available to the public contain the live virus that causes COVID-19. They may cause minor side effects such as a sore arm or mild fever. This is a sign that the vaccine is working.</p>
+</div></p>
+<button type="button" class="collapsible">Vaccine side effects are usually mild</button>
+<div class="content">
+  <p>Vaccines help protect the body from certain diseases. Like any medicine, they can cause minor, short-term side effects while the body adjusts them, such as a sore arm or a mild fever. More serious side effects are possible, but extremely rare. A person is far more likely to be seriously harmed by a disease than by its vaccine.</p>
+</div></p>
+<button type="button" class="collapsible">Pneumonia vaccines don't prevent COVID-19</button>
+<div class="content">
+  <p>The COVID-19 virus is so new and different that it needs its own vaccine. Existing vaccines are highly recommended, however, to protect your health from pneumonia.</p>
+</div></p>
+<button type="button" class="collapsible">Vaccine trials involve a diverse range of volunteers</button>
+<div class="content">
+  <p>In clinical trials, people volunteer to take and test the vaccine. These volunteers should be from diverse geographic areas, racial and ethnic backgrounds, genders, and ages. They should also include people with underlying health conditions that put them at higher risk for the disease. This helps ensure the vaccine is safe and effective for everyone.</p>
+</div></p>
+<button type="button" class="collapsible">You won't be able to make a COVID-19 vaccine at home</button>
+<div class="content">
+  <p>Vaccine development is a complicated, technical process that can't be done at home. It involves extensive laboratory testing followed by clinical trials involving thousands of volunteers. Vaccines must be approved in a country by expert doctors and scientists.</p>
+</div></p>
+<button type="button" class="collapsible">COVID-19 vaccine trials are following safety and ethical standards</button>
+<div class="content">
+  <p>COVID-19 vaccines, like any vaccine, should follow standard development protocol to test the vaccine's effectiveness and identify any common side effects or safety concerns. This includes multiple stages of testing with tens of thousands of volunteers.</p>
+</div></p>
+</div>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+<style>
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: white;
+  color: black;
+}
+</style>
+</head>
+<body>
+
+</footer>
+<footer>
+  <h3>Sitemap</h3>
+
+<a href="index.html">HOME</a>
+<br>
+Health Information
+<br>
+Overview
+<br>
+Is Covid the same in everyone?
+<br>
+News
+<br>
+MySejahtera App
+<br>
+Facts About Covid-19
+
+<br>
+<br>
+    <a href="cases.html">CASES</a>
+<br>
+Covid-19: Malaysia's Daily Cases
+<br>
+Recognized Health Organizations
+<br>
+<br>
+    <a href="vaccine.html">VACCINE</a>
+<br>
+    Vaccines and immunization: What is vaccination?
+    <br>
+    The Covid-19 Vaccines In Malaysia's National Vaccination Programme
+    <br>
+    Current News COVID-19 Vaccine
+    <br>
+<br>
+    <a href="sop.html">SOP</a>
+    <br>
+    General Guidelines Relating to COVID-19 in Malaysia
+    <br>
+    News
+<br>
+<br>
+<a href="prevention.html">PREVENTION</a>
+<br>
+Use Masks to Slow the Spread of COVID-19
+<br>
+Handwashing and hand sanitiser use to prevent the spread of COVID-19
+<br>
+Additional Information
+<br>
+<br>
+<a href="video.html">VIDEO</a>
+<br>
+Visual Info
+<br>
+More video
+<br>
+<br>
+<a href="hotline.html">HOTLINE</a>
+<br>
+List of State Health Departments
+<br>
+COVID-19: Helplines And Resources You Can Reach Out To For Help And Support
+<br>
+Connect With Us Via
+<br>
+</footer>
+<div class="footer">
+<center><a href="aboutme.html"><img src= "image/author.png"></a></center>
+  <pre>Copyright &#169; aisyah_shaheri 2021</pre>
+  <pre>nuraisyah.shaheri@gmail.com</pre>
+<pre>Recommended browser - Google Chrome</pre>
+<pre>25-07-2021</pre>
+</div>
+</body>
+</html>
